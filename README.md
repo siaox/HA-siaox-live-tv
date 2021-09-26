@@ -8,22 +8,22 @@ Sofware / Hardware Requirements:
 
 1. Logitech Harmony Hub or a Broadlink - Using a Harmony Hub
 2. Android Box  -  Using a NVIDIA Shield + Xiaomi Mi Box
-3. Live TV / App - Using TiviMate App - https://play.google.com/store/apps/details?id=ar.tvplayer.tv&hl=en&gl=US
-4. Button Mapper or ADB Integration on Home Assistant
+3. Live TV / App - Using [TiviMate App](https://play.google.com/store/apps/details?id=ar.tvplayer.tv&hl=en&gl=US)
+4. [Button Mapper](https://play.google.com/store/apps/details?id=flar2.homebutton&hl=en&gl=US) or [ADB Integration](https://www.home-assistant.io/integrations/androidtv/) on Home Assistant
 5. Google Calendar with shows / events to trigger automations
 
 
 Home Assistant Integrations:
 
-1. Logitech Harmony - https://www.home-assistant.io/integrations/harmony/
-2. Google Calendar - https://www.home-assistant.io/integrations/calendar.google/
+1. [Logitech Harmony](https://www.home-assistant.io/integrations/harmony/)
+2. [Google Calendar](https://www.home-assistant.io/integrations/calendar.google/)
 
 
 Notes:
 
 Activity / Device ID's can be found in /config/harmonyxxxxx.conf
 
-I have two TV's (Bar and TV Room) which have android boxes connected running an IPTV App (TiviMate). 
+I have two TV's (Bar and TV Room) which have android boxes connected running an IPTV App ([TiviMate App](https://play.google.com/store/apps/details?id=ar.tvplayer.tv&hl=en&gl=US)) 
 
 I've comment the first script that will run the actionable notification and left the second  uncommented to avoid repetition.
 
