@@ -13,7 +13,7 @@ Actionable Notifications for Sporting Events / Live TV Shows using Google Calend
 3. Live TV / App - Using [TiviMate App](https://play.google.com/store/apps/details?id=ar.tvplayer.tv&hl=en&gl=US)
 4. [Button Mapper](https://play.google.com/store/apps/details?id=flar2.homebutton&hl=en&gl=US) or [ADB Integration](https://www.home-assistant.io/integrations/androidtv/) on Home Assistant
 5. Google Calendar with shows / events to trigger automations
-6. [Home Asssitant Companion App -  Play Store (https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en&gl=US)
+6. [Home Asssitant Companion App -  Play Store](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en&gl=US)
 
 
 **Home Assistant Integrations**
