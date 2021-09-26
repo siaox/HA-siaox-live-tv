@@ -23,6 +23,9 @@ Actionable Notifications for Sporting Events / Live TV Shows using Google Calend
 2. [Google Calendar](https://www.home-assistant.io/integrations/calendar.google/)
 
 
+**Installation:**
+1. Copy contents of automations.yaml and scripts.yaml
+2. Follow comments 
 
 
 **Notes:**
