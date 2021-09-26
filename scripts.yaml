@@ -1,0 +1,87 @@
+# As mentioned I've used the Android App "Button Mapper" allow me to open the TiviMate App.
+
+# Sequence:
+# 1. Turn on the Logitech Harmony Activity
+# 2. Set Source
+# 3. Enter channel numbers
+# 4. Hit enter
+
+
+############################################ Script 1 ########################################################################################
+
+
+bar_f1:
+  alias: Bar - F1
+  sequence:
+  - service: remote.turn_on
+    entity_id: remote.rooftop_hub # Enter the  Entity Id of the Hub
+    data:
+      activity: 'xxxxxxxx'  # Enter the activity number found in the /config/harmonyxxxxx.yaml
+
+
+  - delay: 5  # Optional delay to allow the activity to power up before resuming
+
+
+  - service: remote.send_command
+    entity_id: remote.rooftop_hub # Enter the  Entity Id of the Hub
+    data:
+      command: 'Red' #  I've mapped the Red Button on the Harmony Remote to open up the TiviMate App
+      device: xxxxxxxx  # Enter the device id found in the /config/harmonyxxxxx.yaml
+
+
+################ The following service commands are used to enter the channel number -  Channel 10 ################
+                                                                                                                  #
+  - service: remote.send_command                                                                                  #
+    entity_id: remote.rooftop_hub # Enter the  Entity Id of the Hub                                               #
+    data:                                                                                                         #
+      command: 1                                                                                                  #  
+      device: xxxxxxxx  # Enter the device id found in the /config/harmonyxxxxx.yaml                              #
+                                                                                                                  #  
+  - service: remote.send_command                                                                                  #
+    entity_id: remote.rooftop_hub # Enter the  Entity Id of the Hub                                               #
+    data:                                                                                                         #
+      command: 0                                                                                                  #
+      device: xxxxxxxx  # Enter the device id found in the /config/harmonyxxxxx.yaml                              #  
+                                                                                                                  #
+###################################################################################################################
+
+
+
+  - service: remote.send_command
+    entity_id: remote.rooftop_hub # Enter the  Entity Id of the Hub
+    data:
+      command: OK
+      device: xxxxxxxx  # Enter the device id found in the /config/harmonyxxxxx.yaml
+
+
+
+
+############################################ Script 2########################################################################################
+
+tv_f1:
+  alias: TV - Sky Sports F1
+  sequence:
+  - service: remote.turn_on
+    entity_id: remote.tv_room_hub
+    data:
+      activity: 'XXXXXXXXXX'
+  - service: remote.send_command
+    entity_id: remote.tv_room_hub
+    data:
+      command: 'Red'
+      device: XXXXXXXXXX
+  - service: remote.send_command
+    entity_id: remote.tv_room_hub
+    data:
+      command: 1
+      device: XXXXXXXXXX
+  - service: remote.send_command
+    entity_id: remote.tv_room_hub
+    data:
+      command: 0
+      device: XXXXXXXXXX
+  - service: remote.send_command
+    entity_id: remote.tv_room_hub
+    data:
+      command: OK
+      device: XXXXXXXXXX

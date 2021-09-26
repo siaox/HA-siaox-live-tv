@@ -1,0 +1,51 @@
+#####################################
+# Section 1
+# The first automation will use the calendar as a trigger and then use the triggers defined in the second section
+
+
+- alias: F1 Automations
+  trigger:
+    platform: state
+    entity_id: calendar.xxxxxxx # Entitiy ID of the Calendar
+    from: 'off'
+    to: 'on'
+  action:
+    service: notify.mobile_app_xxxxxx #  Add  service command to  Notify Home Asssitant on the device you want the actionable notification 
+    data:
+      title: '{{ states.calendar.xxxxxxx.attributes.message }}'  #  Pulls the name of the event from the  calander 
+      message: Where would you like to watch it?
+      data:
+        image: https://i.ibb.co/hDRJtMx/DPk-ZATWXUAAns-Cz.jpg # Custom icon for the notification 
+        actions:
+        - action: trigger_1  # Trigger defined in the next section to run  sctipt 
+          title: Bar
+        - action: trigger_2
+          title: TV Room
+
+          
+#####################################
+# Section 2
+# Define Triggers  - One for each tv that will run a specific script
+
+- alias: Bar - F1 
+  trigger:
+  - event_data:
+      action: trigger_1
+    event_type: mobile_app_notification_action
+    platform: event
+  action:
+  - service: script.turn_on
+    data:
+      entity_id: script.bar_f1 # Enter the name of  Script 1 - Refer scripts.yaml
+
+
+- alias: TV Room - F1 
+  trigger:
+  - event_data:
+      action: trigger_1
+    event_type: mobile_app_notification_action
+    platform: event
+  action:
+  - service: script.turn_on
+    data:
+      entity_id: script.tv_f1 # Enter the name of the Script 2- Refer scripts.yaml
