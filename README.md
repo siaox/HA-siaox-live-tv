@@ -35,4 +35,4 @@ Hope you guys have fun with this.
 Thanks HA Community.
 
 
-[Buy me a Beer](https://www.buymeacoffee.com/siaox/ha-actionable-notifications-sports-live-tv)
+
