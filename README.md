@@ -30,6 +30,12 @@ I've comment the first script that will run the actionable notification and left
 Android ADB is also an option for opening apps but I felt that since we're already using Harmony we could keep it simple.
 
 
+TiviMate Tips:
+
+
+Use favourites
+For multiple devices / tv's with TiviMate  - Suggest backup and share across devices to use the same channel numbers.
+ 
 
 Hope you guys have fun with this.
 Thanks HA Community.
