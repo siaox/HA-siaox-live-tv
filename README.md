@@ -22,8 +22,11 @@ Home Assistant Integrations:
 Notes:
 
 Activity / Device ID's can be found in /config/harmonyxxxxx.conf
+
 I have two TV's (Bar and TV Room) which have android boxes connected running an IPTV App (TiviMate). 
+
 I've comment the first script that will run the actionable notification and left the second  uncommented to avoid repetition.
+
 Android ADB is also an option for opening apps but I felt that since we're already using Harmony we could keep it simple.
 
 
