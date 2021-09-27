@@ -42,7 +42,7 @@
 - alias: TV Room - F1 
   trigger:
   - event_data:
-      action: trigger_1
+      action: trigger_2
     event_type: mobile_app_notification_action
     platform: event
   action:
