@@ -6,11 +6,11 @@
 - alias: F1 Automations
   trigger:
     platform: state
-    entity_id: calendar.xxxxxxx # Entitiy ID of the Calendar
+    entity_id: calendar.xxxxxxx # Entity ID of the Calendar
     from: 'off'
     to: 'on'
   action:
-    service: notify.mobile_app_xxxxxx #  Add  service command to  Notify Home Asssitant on the device you want the actionable notification 
+    service: notify.mobile_app_xxxxxx #  Add  service command to  Notify Home Asssitant on the device with actionable notifications 
     data:
       title: '{{ states.calendar.xxxxxxx.attributes.message }}'  #  Pulls the name of the event from the  calander 
       message: Where would you like to watch it?
